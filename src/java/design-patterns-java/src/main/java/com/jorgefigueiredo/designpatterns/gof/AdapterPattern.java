@@ -8,35 +8,34 @@ public class AdapterPattern {
 		target.operation();
 		
 	}
-
-}
-
-
-class Target {
 	
-	public void operation() {
-		System.out.println("Called Target operation()");
-	}
-	
-}
-
-class Adapter extends Target {
-	
-	private final NewTarget newTarget = new NewTarget();
-	
-	@Override
-	public void operation() {
+	static class Target {
 		
-		newTarget.newOperation();
+		public void operation() {
+			System.out.println("Called Target operation()");
+		}
 		
 	}
-	
-}
 
-class NewTarget {
-	
-	public void newOperation() {
-		System.out.println("Called NewTarget newOperation()");
+	static class Adapter extends Target {
+		
+		private final NewTarget newTarget = new NewTarget();
+		
+		@Override
+		public void operation() {
+			
+			newTarget.newOperation();
+			
+		}
+		
 	}
-	
+
+	static class NewTarget {
+		
+		public void newOperation() {
+			System.out.println("Called NewTarget newOperation()");
+		}
+		
+	}
+
 }
