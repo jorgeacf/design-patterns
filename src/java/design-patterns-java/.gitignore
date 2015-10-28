@@ -1,1 +1,12 @@
-/target/
+
+# IntelliJ project files
+.idea
+*.iml
+target
+gen### Java template
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
