@@ -1,4 +1,4 @@
-package com.jorgefigueiredo.designpatterns.gof;
+package com.jorgefigueiredo.pattern.gangoffour;
 
 public class TemplatePattern {
 

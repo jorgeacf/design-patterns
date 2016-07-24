@@ -3,23 +3,25 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.jorgefigueiredo</groupId>
-  <artifactId>design-patterns-java</artifactId>
+  <artifactId>design-patterns</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>design-patterns-java</name>
+  <name>design-patterns</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>4.12</junit.version>
+    </properties>
 
   <dependencies>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+      <version>${junit.version}</version>
     </dependency>
+
   </dependencies>
 </project>
